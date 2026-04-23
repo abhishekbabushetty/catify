@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Catify",
+  "version": "1.0",
+  "description": "Replaces all images on any webpage with random cat images.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
